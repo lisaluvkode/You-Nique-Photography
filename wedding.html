@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>You-Nique Photography</title>
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+<div class="weddingdressbkg">
+
+      <header>
+        <h1><a href="index.html">You-Nique Photography</a></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yourphotographer.html">Your Photographer</a></li>
+            <li class="drop">
+              <a class="dropbtn active" href="services.html">Services</a>
+                <div class="dropdown-content">
+                  <a href="wedding.html">Wedding</a>
+                  <a href="family.html">Family</a>
+                  <a href="graduation.html">Graduation</a>
+                </div>
+            </li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="about">
+        <div class="row pic">
+          <div class="column wedpak">
+            <h4>Wedding Packages</h4>
+            <span>1. Save the Date - 30 Mins</span>
+            <span>$150</span>
+            <p>One Outfit Change Includes: 15 edited photos on a disc.
+              *Prints available for additional cost</p>
+
+            <span>2. Engagement Shoot - One Hour</span>
+            <span>$250</span>
+            <p>Two Outfit Changes Includes: 20 photos on a disc.
+              *Prints available for additional cost</p>
+
+            <span>3. Wedding Day - 6 Hours</span>
+            <span>$1500</span>
+            <p>Entire Full day Shoots Before, During, & After your Ceremony. There will be a second photographer on site to ensure we don't miss a memory from your big day.
+              Photos will be put on a disc along with a photo book put together. *Prints available for additional cost</p>
+
+            <span>4. YOUR BIG DAY</span>
+            <span>$1700</span>
+            <p>Save the date, Engagement, & Wedding day
+              This includes all of the above!
+              *Additional cost for pricing</p>
+          </div>
+
+          <div class="column wed">
+            <h4>Wedding Portraits</h4>
+            <p>Your Wedding Day is just a day you CANNOT forget ! Spending the day with loved ones and your special one. Make the day even more unforgettable by photos that capture the happiness of your special day</p>
+            <div class="column wedimg">
+              <img class="myImg" src="images/princeprincess.jpg" alt="prince and princess" >
+              <div class="modal" id="myModal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div class="caption"></div>
+              </div>
+              <img src="images/weddingportrait.jpg" alt="weddingportrait" >
+            </div>
+            <div class="column wedimg">
+              <img src="images/maskqurade.jpg" alt="maskqurade" >
+              <img src="images/lovelymoment.jpg" alt="lovelymoment">
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+<footer>
+  <p><a href="Tel:+1-916-111-2222">Tel. (916) 111 - 2222</a> | <a href="mailto:youniquephotos@gmail.com">youniquephotos@gmail.com</a></p>
+  <p>&copy; 2018 You-Nique Photography.</p>
+  <p>Disclaimer: This is fictional business proudly created by Lisa Nguyen</p>
+  <ul>
+    <li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+    <li><a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+    <li><a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+  </ul>
+</footer>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementsByClassName("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+    </body>
+  </html>

@@ -1,0 +1,534 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.background{
+  background: url("../images/lightbkg.jpg");
+  background-attachment: fixed;
+}
+
+header{
+  background-color: rgba(0,0,0,.5);
+  padding: 4px;
+}
+
+
+header h1{
+  text-align: center;
+  margin:20px;
+  font-family: 'Amatic SC', cursive;
+}
+
+header h1 a{
+  color: white;
+  text-transform: uppercase;
+}
+
+nav{
+  text-align: center;
+}
+
+header nav li{
+  display: inline;
+  padding:0 35px;
+  border-right: 1px solid #bbb;
+
+}
+
+header nav li:last-child {
+    border-right: none;
+}
+
+ul{
+  overflow:hidden;
+}
+
+nav ul li a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.intro{
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+div .intro p{
+  max-width: 800px;
+  padding: 0 70px;
+  line-height: 2;
+  text-align: center;
+  color:white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  background-color:rgba(0,0,0,.2);
+}
+
+
+.introimg{
+    width: 100%;
+    background-size: cover;
+    max-height: 603px;
+    margin-top: -18px;
+}
+
+
+.label{
+  position: relative;
+}
+
+.text-block{
+  position: absolute;
+  top: 50% ;
+  left: 14%;
+  color: rgb(48, 189, 255);
+  background-color:rgba(255, 255, 255, 0.75);
+  padding: 18px 25px 10px;
+  animation-name: animation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@-webkit-keyframes animation {
+  from {top:500px}
+  to {top:200px;}
+}
+
+
+/*about*/
+.bubblebkg{
+  background-image: url("../images/bubbles.jpg");
+  background-attachment: fixed;
+}
+
+.about{
+    background-color: rgba(236, 178, 102, 0.85);
+    padding: 43px;
+    width: 974px;
+    margin: auto;
+    border:8px solid black;
+    text-align: center;
+  }
+
+  .about .row .column h1{
+    font-family: Amatic sc ,cursive;
+    color: #ffffff;
+    line-height: 17px;
+  }
+
+  .about .row .column h4{
+    font-family: Amatic sc ,cursive;
+    font-weight: bold;
+    color: #605E5E;
+  }
+
+  div .about .row .column, p{
+    color: #ffffff;
+  }
+
+  .edu, .hometown{
+    color: #605E5E;
+  }
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column{
+  flex:50%;
+  padding: 15px;
+  max-width: 50%;
+}
+
+.photographer{
+  width: 390px;
+  height: 398px;
+  object-fit: cover;
+  border:5px solid rgba(96, 94, 94, 1);
+}
+
+@media (max-width:1000px){
+  .about{
+    width: 100%;
+    padding: 40px;
+  }
+  .photographer{
+    flex: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width:800px){
+  .column{
+    flex: 100%;
+    max-width: 100%
+  }
+}
+
+/*services*/
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+li a.active{
+  color: #A0A09F;
+}
+
+li a:hover, .drop:hover .dropbtn{
+    color: #A0A09F;
+    text-decoration: none;
+}
+
+ header h1 a:hover{
+   text-decoration: none;
+   color: white;
+ }
+
+li.drop {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 131px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.drop:hover .dropdown-content {
+    display: block;
+}
+
+.officebkg{
+  background-image: url("../images/office.jpg");
+  background-attachment: fixed;
+}
+
+.pic{
+  justify-content: center;
+}
+
+.photosec h4{
+  color: #605E5E;
+  font-size: 40px;
+}
+
+.photosec p{
+  line-height: 0.5;
+  color:black;
+}
+
+.note{
+  text-decoration: underline;
+}
+
+.img{
+  flex:33%;
+}
+
+ .img span{
+   text-decoration: underline;
+   font-weight: bold;
+ }
+
+ .img p{
+   color: black;
+ }
+
+.servicefooter{
+  color: white;
+}
+
+/*wedding*/
+.weddingdressbkg{
+  background-image: url("../images/weddingdress.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wedpak{
+  max-width: 36%;
+  margin-right: 85px;
+}
+
+.wedpak h4, span{
+   color: black;
+   text-decoration: underline;
+   font-weight: bold;
+ }
+
+ .wedpak p{
+   color: black;
+ }
+
+.wed h4{
+  flex: 67%;
+  text-align: right;
+    font-size: 40px;
+}
+
+.wed p{
+  text-align: center;
+  color: black;
+
+}
+
+.wedimg{
+  float: left;
+}
+
+.wedimg img{
+  width: 198px;
+  margin-bottom: 18px;
+  border: solid 5px rgba(160, 160, 159, 1)
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, .caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*family*/
+
+
+
+/*graduation*/
+
+
+
+/*schedule*/
+.meditatebkg{
+  background-image: url("../images/meditate.jpg");
+  background-attachment: fixed;
+}
+
+.schedule h4{
+  text-align: left;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+
+
+/*works*/
+.boatbkg{
+  background-image: url("../images/boat.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+
+
+/*contact*/
+.mountainbkg{
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contact h4{
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 6px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.contact{
+  margin: auto;
+}
+
+
+
+
+/*faq*/
+
+.faq h4{
+  text-align: center;
+  color: black ;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.faq{
+  max-width: 100%
+}
+
+.questions{
+  text-align: left;
+}
+
+.questions span{
+  color: white;
+  background-color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+}
+
+.questions p{
+  color: black;
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+
+footer{
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,.5);
+  padding: 60px 0;
+}
+
+footer ul li{
+    display: inline;
+    padding:35px;
+}
+
+footer p a{
+  color: white;
+
+}
