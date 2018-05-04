@@ -24,8 +24,8 @@
               <a class="dropbtn" href="services.html">Services</a>
                 <div class="dropdown-content">
                   <a href="wedding.html">Wedding</a>
-                  <a href="#">Family</a>
-                  <a href="#">Graduation</a>
+                  <a href="family.html">Family</a>
+                  <a href="graduation.html">Graduation</a>
                 </div>
             </li>
             <li><a href="schedule.html">Schedule</a></li>
@@ -37,11 +37,143 @@
       </header>
 
       <div class="about">
-        <div class="row">
-          <div class="column">
+          <div class="works">
+            <h4>Previous Photo Shoots </h4>
+          </div>
+          <div class="container1">
+            <div class="mySlides">
+              <div class="numbertext">
+                1/12
+              </div>
+              <img class="slideImg" src="images/weddingdress.jpg" alt="weddingdress">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                2/12
+              </div>
+              <img class="slideImg" src="images/graduation.jpg" alt="graduation">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                3/12
+              </div>
+              <img class="slideImg" src="images/cameraman.jpg" alt="camera man">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                4/12
+              </div>
+              <img class="slideImg" src="images/fashionmodel.jpg" alt="fashion model">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                5/12
+              </div>
+              <img class="slideImg" src="images/couplewsunglasses.jpg" alt="couple with sunglasses">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                6/12
+              </div>
+              <img class="slideImg" src="images/newborn.jpg" alt="new born baby">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                7/12
+              </div>
+              <img class="slideImg" src="images/cherryblossom.jpg" alt="cherryblossom">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                8/12
+              </div>
+              <img class="slideImg" src="images/leicapo.jpg" alt="leica camera">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                9/12
+              </div>
+              <img class="slideImg" src="images/fujifilmpo.jpg" alt="fujifilm cam">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                10/12
+              </div>
+              <img class="slideImg" src="images/happybride.jpg" alt="happy bride">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                11/12
+              </div>
+              <img class="slideImg" src="images/dog.jpg" alt="dog pic">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">
+                12/12
+              </div>
+              <img class="slideImg" src="images/landscape.jpg" alt="landscape">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class="row1">
+              <div class="column1">
+                <img class="demo cursor" src="images/weddingdress.jpg" style="width:100%" onclick="currentSlide(1)" alt="Wedding Dress">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/graduation.jpg" style="width:100%" onclick="currentSlide(2)" alt="Graduation">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/cameraman.jpg" style="width:100%" onclick="currentSlide(3)" alt="Camera Man">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/fashionmodel.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fashion Model">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/couplewsunglasses.jpg" style="width:100%" onclick="currentSlide(5)" alt="Couple with Sunglasses">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/newborn.jpg" style="width:100%" onclick="currentSlide(6)" alt="New Born Baby">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/cherryblossom.jpg" style="width:100%" onclick="currentSlide(7)" alt="Cherry Blossom">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/leicapo.jpg" style="width:100%" onclick="currentSlide(8)" alt="Leica Camera">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/fujifilmpo.jpg" style="width:100%" onclick="currentSlide(9)" alt="Fujifilm Camera">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/happybride.jpg" style="width:100%" onclick="currentSlide(10)" alt="Happy Bride">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/dog.jpg" style="width:100%" onclick="currentSlide(11)" alt="Dog">
+              </div>
+              <div class="column1">
+                <img class="demo cursor" src="images/landscape.jpg" style="width:100%" onclick="currentSlide(12)" alt="Cable Car">
+              </div>
+
+
+
+
+            </div>
 
           </div>
-        </div>
       </div>
 
 
@@ -58,5 +190,36 @@
 </footer>
 
 </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
     </body>
   </html>

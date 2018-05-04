@@ -12,6 +12,7 @@ body{
 .background{
   background: url("../images/lightbkg.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 header{
@@ -394,13 +395,82 @@ li.drop {
     cursor: pointer;
 }
 
-
 /*family*/
+.familybkg{
+  background-image: url("../images/familyportrait.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
 
+.famimg{
+  float: left;
+}
 
+.famimg img{
+  width: 198px;
+  margin-bottom: 18px;
+  border: solid 5px rgba(160, 160, 159, 1)
+}
+
+.fampak h4{
+  flex: 67%;
+  font-size: 40px;
+}
+
+.fampak span{
+   color: black;
+   text-decoration: underline;
+   font-weight: bold;
+ }
+
+ .fampak p{
+   color: black;
+ }
 
 /*graduation*/
+.graduationbkg{
+  background-image: url("../images/graduation.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
+.gradimg h4{
+  flex: 67%;
+  font-size: 40px;
+}
+
+.gradimg p, .gradpak p, span{
+  color: black;
+}
+
+.gradimg img{
+  border: solid 5px rgba(160, 160, 159, 1)
+}
+
+.gradpak h4{
+  text-align: right;
+}
+
+.gradpak span{
+
+   text-decoration: underline;
+   font-weight: bold;
+ }
+
+/*schedule*/
+.meditatebkg{
+  background-image: url("../images/meditate.jpg");
+  background-attachment: fixed;
+}
+
+.schedule h4{
+  text-align: left;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
 
 
 /*schedule*/
@@ -427,6 +497,109 @@ li.drop {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+}
+
+.works h4{
+  text-align: center;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.works{
+  margin: auto;
+}
+
+.container1{
+  position: relative;
+}
+
+.mySlides{
+  display: none;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.slideImg{
+  height:436px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+  height: 97px;
+  overflow: hidden;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 
@@ -478,7 +651,6 @@ input[type=submit]:hover {
 .contact{
   margin: auto;
 }
-
 
 
 
