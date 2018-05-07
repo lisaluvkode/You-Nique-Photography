@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
       <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
 
@@ -17,6 +18,9 @@
       <header>
         <h1><a href="index.html">You-Nique Photography</a></h1>
         <nav>
+          <div class="toggle">
+            <i class="fas fa-bars menu cursor"></i>
+          </div>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="yourphotographer.html">Your Photographer</a></li>
@@ -100,27 +104,12 @@
 
 </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementsByClassName("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu').click(function(){
+      $('ul').toggleClass('act');
+    })
+  })
 </script>
 
     </body>

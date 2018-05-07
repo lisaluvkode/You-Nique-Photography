@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
       <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
 
@@ -16,6 +17,9 @@
       <header>
         <h1><a href="index.html">You-Nique Photography</a></h1>
         <nav>
+          <div class="toggle">
+            <i class="fas fa-bars menu cursor"></i>
+          </div>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="yourphotographer.html">Your Photographer</a></li>
@@ -72,5 +76,13 @@
 </footer>
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu').click(function(){
+      $('ul').toggleClass('act');
+    })
+  })
+</script>
     </body>
   </html>

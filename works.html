@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
       <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
 
@@ -17,6 +18,9 @@
       <header>
         <h1><a href="index.html">You-Nique Photography</a></h1>
         <nav>
+          <div class="toggle">
+            <i class="fas fa-bars menu cursor"></i>
+          </div>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="yourphotographer.html">Your Photographer</a></li>
@@ -115,7 +119,7 @@
               <div class="numbertext">
                 11/12
               </div>
-              <img class="slideImg" src="images/dog.JPG" alt="dog pic">
+              <img class="slideImg" src="images/dog.JPG" alt="cute dog">
             </div>
 
             <div class="mySlides">
@@ -125,8 +129,8 @@
               <img class="slideImg" src="images/landscape.jpg" alt="landscape">
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1)" style="color:white">❮</a>
+            <a class="next" onclick="plusSlides(1)" style="color:white">❯</a>
             <div class="caption-container">
               <p id="caption"></p>
             </div>
@@ -162,7 +166,7 @@
                 <img class="demo cursor" src="images/happybride.jpg" style="width:100%" onclick="currentSlide(10)" alt="Happy Bride">
               </div>
               <div class="column1">
-                <img class="demo cursor" src="images/dog.JPG" style="width:100%" onclick="currentSlide(11)" alt="Dog">
+                <img class="demo cursor" src="images/dog.JPG" style="width:100%" onclick="currentSlide(11)" alt="Cute Dog">
               </div>
               <div class="column1">
                 <img class="demo cursor" src="images/landscape.jpg" style="width:100%" onclick="currentSlide(12)" alt="Cable Car">
@@ -191,6 +195,13 @@
 
 </div>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu').click(function(){
+      $('ul').toggleClass('act');
+    })
+  })
+</script>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);

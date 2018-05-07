@@ -26,11 +26,11 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail;
-	$email_subject = "Contact form submission: $fname";
+	$email_subject = "Contact form submission: $fname $lname";
 	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $fname \n Last: $lname \n Email: $email_address \n Phone: $phone \n Message \n $message";
+	" Here are the details:\n Name: $fname \n Last: $lname \n Email: $email_address \n Phone: $phone \n Message: \n $message";
 
-	$headers = "From: $myemail\n";
+	$headers = "From: You-Nique Photo <$myemail>\n";
 	$headers .= "Reply-To: $email_address";
 
 	mail($to,$email_subject,$email_body,$headers);
