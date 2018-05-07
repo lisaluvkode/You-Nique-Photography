@@ -72,6 +72,7 @@ nav ul li a{
   color: #fff;
   font-size: 30px;
   display: none;
+  margin-top: -70px;
 }
 
 @media (max-width:800px){
@@ -87,9 +88,13 @@ nav ul li a{
       text-align: center;
       border: none;
       padding: 10px;
+      font-size: 15px;
     }
     .act{
       display: block;
+    }
+    header h1{
+      font-size: 30px;
     }
 }
 
@@ -98,7 +103,6 @@ nav ul li a{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 div .intro p{
@@ -112,14 +116,12 @@ div .intro p{
   background-color:rgba(0,0,0,.2);
 }
 
-
 .introimg{
     width: 100%;
     background-size: cover;
     max-height: 603px;
     margin-top: -18px;
 }
-
 
 .label{
   position: relative;
@@ -135,7 +137,6 @@ div .intro p{
   animation-name: animation;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-
 }
 
 @-webkit-keyframes animation {
@@ -213,7 +214,7 @@ div .intro p{
     width: 100%;
     padding: 40px;
   }
-  .photographer, .slideImg{
+  .photographer, .slideImg, .grad, .serv{
     flex: 100%;
     max-width: 100%;
     height: auto;
@@ -306,6 +307,12 @@ li.drop {
 
 .img{
   flex:33%;
+}
+
+@media (max-width:800px){
+  .img{
+    flex: 100%;
+  }
 }
 
  .img span{
